@@ -1,5 +1,6 @@
 import logging
 import argparse
+import sys
 
 # Set the log output file, and the log level
 logging.basicConfig(filename="snippets.log", level=logging.DEBUG)
@@ -20,7 +21,7 @@ def get(name):
     logging.error("FIXME: Unimplemented - get({!r})".format(name))
     return ""
 
-def append(name, snippet_append):
+def update(name, snippet_appdate):
     """
     Find a snippet with the associated name.
     Return the original snippet.
